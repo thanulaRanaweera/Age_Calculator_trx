@@ -1,3 +1,4 @@
+###########trx####################
 print("********Current date******")
 
 t_date=int(input("ENTER TODAYS DATE:"))
@@ -14,8 +15,11 @@ b_yr=int(input("ENTER BIRTH YEAR:"))
 print(" ")
 print("-----------------------------------------")
 print(" ")
-#Hi! Nethmi Madam, Thank You.....
+#there are few other ways to do the calculations without this array
 mon=[30, 30, 30, 30, 30, 30, 30, 30, 30, 30,30, 30]
+#this calculation is the core
+#It can be done in a different way too.
+#this is what we do, when we calculate the age manualy
 if (b_date>t_date):
     t_mon=t_mon-1
     t_date=t_date+mon[b_mon-1]
@@ -27,3 +31,4 @@ mon=abs(int((b_mon-t_mon)))
 yr=abs(int((t_yr-b_yr)))
 print("********AGE Calculator ******")
 print("Years: ",yr," Months: ",mon," Days: ",days)
+#bye
